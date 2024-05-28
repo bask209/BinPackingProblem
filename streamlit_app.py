@@ -2,6 +2,16 @@ import streamlit as st
 import pandas as pd
 import sqlite3
 
+documentation_string=r'''
+Please, before using this software, have a look at the documentation following these links: 
+
+[General apps documentation](https://vidabasca.com/appsyoucanuse)
+
+[Bin packing problem documentation](https://vidabasca.com/appsyoucanuse/bin-packing-problem)
+'''
+
+st.write(documentation_string)
+
 def chunk_list(input_list, chunk_size):
     chunked_list = []
     for item in input_list:
