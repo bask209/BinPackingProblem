@@ -10,7 +10,7 @@ Please, before using this software, have a look at the documentation following t
 [Bin packing problem documentation](https://vidabasca.com/appsyoucanuse/bin-packing-problem)
 '''
 
-st.write(documentation_string)
+st.markdown(documentation_string, unsafe_allow_html=True)
 
 def chunk_list(input_list, chunk_size):
     chunked_list = []
